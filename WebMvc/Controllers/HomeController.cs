@@ -10,6 +10,8 @@ namespace WebMvc.Controllers
     {
         public ActionResult Index()
         {
+            var q = new System.Net.Http.HttpClient();
+
             return View();
         }
 
