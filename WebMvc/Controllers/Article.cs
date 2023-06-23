@@ -12,6 +12,10 @@ namespace WebMvc.Controllers
         public void Contact()
         {
             var q = new HttpClient();
+
+            System.Data.SqlClient.SortOrder w = new System.Data.SqlClient.SortOrder();
+
+            System.Data.SqlClient.SqlCommand command = new System.Data.SqlClient.SqlCommand();
         }
     }
 }
