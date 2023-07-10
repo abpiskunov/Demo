@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,5 +9,9 @@ namespace ClassLibrary
 {
     public class Class1
     {
+        public void TestMethod()
+        {
+            var readerC = new StreamReader("somepath");
+        }
     }
 }

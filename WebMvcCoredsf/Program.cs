@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Azure;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSystemWebAdapters();
@@ -5,6 +6,11 @@ builder.Services.AddHttpForwarder();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddAzureClients(clientBuilder =>
+{
+    clientBuilder.AddBlobServiceClient(builder.Configuration["dfdfd:blob"], preferMsi: true);
+    clientBuilder.AddQueueServiceClient(builder.Configuration["dfdfd:queue"], preferMsi: true);
+});
 
 var app = builder.Build();
 

@@ -16,6 +16,10 @@ namespace WebMvc.Controllers
             System.Data.SqlClient.SortOrder w = new System.Data.SqlClient.SortOrder();
 
             System.Data.SqlClient.SqlCommand command = new System.Data.SqlClient.SqlCommand();
+
+            System.Net.WebRequest q2 = null;
+
+            System.Net.Mail.Attachment attachment = null;
         }
     }
 }

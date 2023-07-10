@@ -13,6 +13,8 @@ namespace WebMvc.Controllers
             var q = System.Runtime.InteropServices.Marshal.GetActiveObject("");
 
             var w = System.Runtime.InteropServices.Marshal.ReleaseComObject("");
+
+            var connectionString = "Data Source=xxx;Integrated Security=yes";
         }
     }
 }
