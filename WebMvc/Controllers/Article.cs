@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Security.Cryptography;
 using System.Web;
 using System.Web.Mvc;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace WebMvc.Controllers
 {
@@ -20,6 +22,24 @@ namespace WebMvc.Controllers
             System.Net.WebRequest q2 = null;
 
             System.Net.Mail.Attachment attachment = null;
+
+            var w1 = System.Security.Cryptography.HashAlgorithmName.SHA1;
+
+            var w2 = CngAlgorithm.Sha1;
+        }
+
+        public string Encrypt()
+        {
+            var x = new MD5CryptoServiceProvider();
+            byte[] bs = System.Text.Encoding.UTF8.GetBytes("some text");
+            bs = x.ComputeHash(bs);
+            System.Text.StringBuilder s = new System.Text.StringBuilder();
+            foreach (byte b in bs)
+            {
+                s.Append(b.ToString("x2").ToLower());
+            }
+            return s.ToString();
+
         }
     }
 }

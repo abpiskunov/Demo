@@ -12,6 +12,8 @@ namespace WebMvc.Controllers
         {
             var q = new System.Net.Http.HttpClient();
 
+            var someUrl = "http://someadress.com/xxxxxxxx";
+
             return View();
         }
 
