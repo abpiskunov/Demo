@@ -23,10 +23,10 @@ namespace WebMvc.Controllers
         {
             //List<string> qq = new();
             var reader = new StreamReader("somepath");
-            var reader3 = new System.IO.StreamReader(new MemoryStream());
+            var reader3 = new System.IO.StreamReader(new MemoryStream());  
             var oledbCommand = new OleDbCommand("SELECT * FROM table"); 
 
-            var w = System.Runtime.InteropServices.Marshal.ReleaseComObject("");
+            var w = System.Runtime.InteropServices.Marshal.ReleaseComObject(""); 
 
             var r = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Default);
 

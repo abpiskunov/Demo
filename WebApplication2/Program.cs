@@ -22,4 +22,6 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
+app.MapControllerRoute("Default", "{controller=Home}/{action=Index}/{id?}");
+
 app.Run();
