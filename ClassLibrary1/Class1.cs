@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Runtime.InteropServices;
@@ -41,6 +42,10 @@ namespace ClassLibrary1
             NativeMethods.Test();
 
             File.Delete("dddd");
+
+            var psi = new ProcessStartInfo("cmd.exe", "/c dir /s");
+
+            System.Diagnostics.EventLog.Delete("ssss");
         }
     }
 }

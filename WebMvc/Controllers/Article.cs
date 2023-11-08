@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.DirectoryServices;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Security.Cryptography;
 using System.Web;
@@ -26,6 +28,14 @@ namespace WebMvc.Controllers
             var w1 = System.Security.Cryptography.HashAlgorithmName.SHA1;
 
             var w2 = CngAlgorithm.Sha1;
+
+            System.Web.Security.FormsAuthentication.Encrypt(null);
+
+            System.Web.Security.MachineKey.Protect(null);
+
+            var ss = System.Net.WebSockets.ClientWebSocket.CreateServerBuffer(1);
+
+            System.DirectoryServices.
         }
 
         public string Encrypt()

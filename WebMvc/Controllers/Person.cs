@@ -25,6 +25,8 @@ namespace WebMvc.Controllers
             var currentDir = Environment.CurrentDirectory;
 
             var tempFile = Path.GetTempFileName();
+            
+            var qq = Topshelf.HostFactory.New(null);
 
             System.IO.Compression.ZipFile.CreateFromDirectory("xxx", "yyy");
 

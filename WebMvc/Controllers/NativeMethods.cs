@@ -14,7 +14,7 @@ namespace WebMvc.Controllers
         public static extern int WriteProfileSection(string lpAppName, string lpString, string lpFileName);
 
         [DllImport("USER32.DLL")]
-        public static extern IntPtr GetShellWindow(); 
+        public static extern IntPtr GetShellWindow();
     } 
 
     public class UsingIni
