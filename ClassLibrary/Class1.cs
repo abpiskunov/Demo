@@ -5,7 +5,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Hangfire;
 
 namespace ClassLibrary
 {
@@ -28,10 +27,10 @@ namespace ClassLibrary
 
             var tt = new XmlWriterTraceListener("qq");
 
-            GlobalConfiguration.Configuration
-                .UseRedisStorage("<name or connection string>");
+            //GlobalConfiguration.Configuration
+            //    .UseRedisStorage("<name or connection string>");
 
-            CoreWCF.NetTcpBinding binding = new CoreWCF.NetTcpBinding();
+            //CoreWCF.NetTcpBinding binding = new CoreWCF.NetTcpBinding();
         }
     }
 }

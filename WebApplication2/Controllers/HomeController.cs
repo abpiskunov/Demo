@@ -28,7 +28,7 @@ namespace WebMvc.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            var message = new System.Messaging.Message();
+            //var message = new System.Messaging.Message();
 
             return View();
         }

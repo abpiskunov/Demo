@@ -35,7 +35,7 @@ namespace WebMvc.Controllers
 
             var ss = System.Net.WebSockets.ClientWebSocket.CreateServerBuffer(1);
 
-            System.DirectoryServices.
+            //System.DirectoryServices.
         }
 
         public string Encrypt()
