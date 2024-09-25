@@ -6,4 +6,7 @@
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
+	<ItemGroup>
+		<PackageReference Include="NuGet.Packaging" Version="6.11.0" />
+	</ItemGroup>
 </Project>

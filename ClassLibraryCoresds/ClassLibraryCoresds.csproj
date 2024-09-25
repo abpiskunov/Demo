@@ -6,4 +6,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+	<ImportGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+	</ImportGroup>
 </Project>
